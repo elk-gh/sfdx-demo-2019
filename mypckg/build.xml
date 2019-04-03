@@ -34,6 +34,11 @@
 				<arg value="-am ${gt.commitMessage}" />
 			</args>
 		</git>
+		<git command="push" dir="${Sandbox1.gitDirectory}">
+			<args>
+				<arg value="u origin demo-5" />
+			</args>
+		</git>
     </target>
 
     <!-- Deploy the unpackaged set of metadata retrieved with retrieveUnpackaged and run tests in this organization's namespace only-->
