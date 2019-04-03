@@ -34,7 +34,7 @@
 				<arg value="-am ${gt.commitMessage}" />
 			</args>
 		</git>
-		<git command="push -u origin demo-5" dir="${Sandbox1.gitDirectory}">
+		<git command="git push -u origin demo-5" dir="${Sandbox1.gitDirectory}">
 			<args>
 				<arg value="." />
 			</args>
