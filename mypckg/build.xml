@@ -20,7 +20,7 @@
 	
 	<!-- Shows deploying code and running tests only within the org namespace -->
 	<target name="deployCodeRunLocalTests">
-	  <sf:deploy username="${sf.username2}" password="${sf.password2}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="retrieveUnpackaged" rollbackOnError="true"  testlevel="RunLocalTests"/>
+	  <sf:deploy username="${sf.username2}" password="${sf.password2}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="myproject" rollbackOnError="true"  testlevel="RunLocalTests"/>
 	</target>
 
 	<!-- Retrieve the information of all items of a particular metadata type -->
