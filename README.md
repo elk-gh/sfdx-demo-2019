@@ -208,4 +208,21 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
   ```
   OPENSSL_CONF=C:\openssl\share\openssl.cnf
   ```
+- Ir a C:\openssl\bin
+- Generar llave privada RSA
+  ```
+  openssl genrsa -des3 -passout pass:x -out server.pass.key 2048
+  ```
+- Crear archivo key del archivo server.pass.key 
+```
+  openssl rsa -passin pass:x -in server.pass.key -out server.key
+```
+- Generar el Certificate Signing Request. Llenar Información de la compañia.
+```
+  openssl req -new -key server.key -out server.csr
+```
+
+
+
+
 
