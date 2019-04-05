@@ -31,9 +31,13 @@ Nombre: Créditos
 - Setear variables de entorno
 - Crear package.xml
 - Retrieve desde A
-   `ant retrieveUnpackaged
+  ```
+  ant retrieveUnpackaged
+  ```
 - Deploy a B
-  `ant deployUnpackaged
+  ```
+  ant deployUnpackaged
+  ```
 Ver: [Deploying Metadata with the Force.com Migration Tool](https://www.youtube.com/watch?v=YW9aPrxvK3A)
 
 ## Demo 4
