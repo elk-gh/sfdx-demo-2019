@@ -1,5 +1,4 @@
-# sfdx-demo-2019
-# Demo CI DX - Dev Week
+### Demo CI DX - Dev Week
 
 ## Prerequisitos
 
