@@ -92,11 +92,11 @@ Nombre: Créditos
   sfdx force:config:set defaultusername=<username>
   ```
 - Retrieve metadata (beta)
-  Por componentes
+  - Por componentes
   ```
   sfdx force:source:retrieve --metadata CustomObject:Curso__c,CustomField:Curso__c.Creditos__c,ApexClass
   ```
-  Con Manifest
+  - Con Manifest
   ```
   sfdx force:source:retrieve -x path/to/package.xml
   ```
@@ -112,22 +112,53 @@ Nombre: Créditos
   ```
 - Zippear
 - Autorizar Org B
-  SFDX: Authorize an Org
+  - SFDX: Authorize an Org
   ```
   sfdx force:auth:web:login --setalias myDevProd --instanceurl https://login.salesforce.com
   ```
 - Deploy metadata
-  Sin Pruebas
+  - Sin Pruebas
   ```
   sfdx force:mdapi:deploy --zipfile tmp_convert.zip --targetusername myDevProd --testlevel NoTestRun -w 1
   ```
-  Con pruebas específicas
+  - Con pruebas específicas
   ```
   sfdx force:mdapi:deploy --zipfile tmp_convert.zip --targetusername myDevProd --testlevel RunSpecifiedTests --runtests RTest -w 1
   ```
 ## Demo 7
 
+- Activar DevHub en A
+- Autorizar DevHub
+  ```
+  sfdx force:auth:web:login -d -a DevHub
+  ```
+- Set Default Dev Hub Username
+  ```
+  sfdx force:config:set defaultdevhubusername=ecordoba@avanxo.com.demodwdevhub
+  ```
+- Clonar Repositorio
+  ```
+  git clone git@github.com:elk-gh/sfdx-demo-2019.git
+  git checkout demo-7
+  ```
+- Crear una Scratch Org
+  ```
+  sfdx force:org:create -s -f config/project-scratch-def.json -a sfdx-demo-2019
+  ```
+- Hacer push a Scratch Org
+  ```
+  sfdx force:source:push
+  ```
+- Abrir Scratch Org
+  ```
+  sfdx force:org:open
+  ```
 ## Demo 8
+
+- Crear un paquete no gestionado en A
+- Agregar componentes
+- Subir el paquete
+- Compartir el link con B
 
 ## Demo 9
 
