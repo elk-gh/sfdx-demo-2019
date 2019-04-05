@@ -13,10 +13,12 @@
 
 ## Demo 1 - Crear Objeto y Campo
 
-- Ir a Objetos - Crear Objetos
-Nombre: Cursos
-- Ir a Campos - Crear Campos
-Nombre: Créditos
+- Ir a Objetos 
+  - Crear Objetos
+    Nombre: Cursos
+- Ir a Campos 
+  - Crear Campos
+  Nombre: Créditos
 
 ## Demo 2
 
