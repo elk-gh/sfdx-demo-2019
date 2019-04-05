@@ -8,7 +8,7 @@
 - [Java y ANT](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/forcemigrationtool_prereq.htm)
 - [Jenkins](https://jenkins.io/download/)
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [Salesforce Extension Pack](Salesforce Extension Pack)
+- [Salesforce Extension Pack](https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode)
 - [Salesforce CLI](https://developer.salesforce.com/tools/sfdxcli)
 
 ## Demo 1 - Crear Objeto y Campo
@@ -83,21 +83,22 @@ Nombre: Créditos
   git checkout -b <my-branch>
   ```
 - Autorizar Org A
-
-SFDX: Authorize an Org
+  - SFDX: Authorize an Org
   ```
   sfdx force:auth:web:login --setalias myDev1 --instanceurl https://login.salesforce.com
   ```
-set defaultusername
+  - set defaultusername
   ```
-  sfdx force:config:set defaultusername=ecordoba-fp-01@avanxo.com.demo
+  sfdx force:config:set defaultusername=<username>
   ```
 - Retrieve metadata (beta)
+  Por componentes
   ```
   sfdx force:source:retrieve --metadata CustomObject:Curso__c,CustomField:Curso__c.Creditos__c,ApexClass
   ```
+  Con Manifest
   ```
-  sfdx force:source:retrieve -x path/to/package.xml (con manifest)
+  sfdx force:source:retrieve -x path/to/package.xml
   ```
 - Hacer commit
   ```
@@ -116,9 +117,11 @@ set defaultusername
   sfdx force:auth:web:login --setalias myDevProd --instanceurl https://login.salesforce.com
   ```
 - Deploy metadata
+  Sin Pruebas
   ```
   sfdx force:mdapi:deploy --zipfile tmp_convert.zip --targetusername myDevProd --testlevel NoTestRun -w 1
   ```
+  Con pruebas específicas
   ```
   sfdx force:mdapi:deploy --zipfile tmp_convert.zip --targetusername myDevProd --testlevel RunSpecifiedTests --runtests RTest -w 1
   ```
