@@ -1,22 +1,49 @@
 # sfdx-demo-2019
 # Demo CI DX - Dev Week
 
-#Demo 1 
+## Prerequisitos
 
-#Demo 2
+- [Developer Org](https://developer.salesforce.com/signup)
+- [Migration Toolkit](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/forcemigrationtool_install.htm)
+- [Java y ANT](https://developer.salesforce.com/docs/atlas.en-us.daas.meta/daas/forcemigrationtool_prereq.htm)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Salesforce Extension Pack](Salesforce Extension Pack)
+- [Salesforce CLI](https://developer.salesforce.com/tools/sfdxcli)
 
-#Demo 3
+## Demo 1 - Crear Objeto y Campo
 
-#Demo 4
+- Ir a Objetos - Crear Objetos
+Nombre: Cursos
+- Ir a Campos - Crear Campos
+Nombre: Créditos
 
-#Demo 5
+## Demo 2
 
-#Demo 6
+- Conectar Sandbox A y B
+- Enviar Conjunto de cambios desde Sandbox A a B
+- Implementar Cambios en Sandbox B
 
-#Demo 7
+## Demo 3
 
-#Demo 8
+- Instalar Migration Toolkit
+- Instalar Java y ANT
+- Setear variables de entorno
+- Crear package.xml
+- Retrieve desde A
+ant retrieveUnpackaged
+- Deploy a B
+ant deployUnpackaged
 
-#Demo 9
+## Demo 4
 
-#Demo 10
+## Demo 5
+
+## Demo 6
+
+## Demo 7
+
+## Demo 8
+
+## Demo 9
+
+## Demo 10
