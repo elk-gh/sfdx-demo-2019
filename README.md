@@ -203,3 +203,9 @@ Ver: [Quick Start: Salesforce DX](https://trailhead.salesforce.com/content/learn
 Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/learn/modules/unlocked-packages-for-customers/build-your-first-unlocked-package)
 
 ## Demo 10
+- Instalar openSSL en C:\openssl
+- Setear variable de entorno
+  ```
+  OPENSSL_CONF=C:\openssl\share\openssl.cnf
+  ```
+
