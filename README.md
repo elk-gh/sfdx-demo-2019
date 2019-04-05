@@ -9,6 +9,7 @@
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Salesforce Extension Pack](https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode)
 - [Salesforce CLI](https://developer.salesforce.com/tools/sfdxcli)
+- [OpenSSL](https://sourceforge.net/projects/gnuwin32/files/openssl/0.9.8h-1/openssl-0.9.8h-1-bin.zip/download)
 
 ## Demo 1 - Crear Objeto y Campo
 
