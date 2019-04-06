@@ -295,7 +295,8 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
 - Retornar a Jenkins
 - Ir al repositorio 
 - Selecionar la opcion "Build Now" --> Console OutPut
-- Ver: [Continuous Integration|Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ci.htm)
+
+Ver: [Continuous Integration|Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ci.htm)
 
 
 
