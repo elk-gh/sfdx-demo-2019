@@ -217,7 +217,7 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
   ```
     openssl rsa -passin pass:x -in server.pass.key -out server.key
   ```
-- Generar el Certificate Signing Request. Llenar Información de la compañia.
+- Generar el Certificate Signing Request.
   ```
     openssl req -new -key server.key -out server.csr
   ```
@@ -225,18 +225,8 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
   ```
       openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out server.crt
   ```
-- Ir a C:\openssl\bin, se encuentran los archivos
-  ```
-      - server.crt
-      - server.csr
-      - server.key
-      - server.pass.key
-  ```
 - Crear Aplicación Conectada
-  ```
-      - Nombre: Demo10
-
-      - Callback URL: http://localhost:1717/OauthRedirect
+  ```- Callback URL: http://localhost:1717/OauthRedirect
   ```
 - Enable OAuth Settings
   ```
@@ -247,7 +237,7 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
   ```
 - Use digital signatures
   ```
-    Subir server.crt
+    server.crt
   ```
 -Click en Manage
 -Edit Policies
@@ -282,7 +272,7 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
     CONNECTED_APP_CONSUMER_KEY_DH : Consumer key obtained in the connected app
     JWT_CRED_ID_DH: The credentials ID for the private  key file (Se obtiene desde Jenkins)
         - Login en Jenkins
-        - Ubicar las credenciales globales (Credetinals --> System --> Global Credentials --> ServerKey)
+        - Ubicar las credenciales globales (Credentials --> System --> Global Credentials --> ServerKey)
         - Update (Extraer ID del file y utilizarlo en la variable de entorno JWT_CRED_ID_DH)
    ```
 - Configurar Jenkins
@@ -298,12 +288,12 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
 - Ir al repositorio 
 - Selecionar la opcion "Build Now" 
   ```
-    Console outPut (Se evidencia que no se puede obtener la avriable de entorno)
+    Console outPut (Se evidencia que no se puede obtener la variable de entorno)
   ```  
 - Reinciar el equipo
 - Retornar a Jenkins
 - Ir al repositorio 
-- Selecionar la opcion "Build Now" --> Console outPut
+- Selecionar la opcion "Build Now" --> Console OutPut
 
 
 
