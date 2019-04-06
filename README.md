@@ -297,7 +297,7 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
 Ver: [Continuous Integration|Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ci.htm)
 
 
-- Enlaces Adicionales
+## Enlaces Adicionales
   - [Dude, where's my permission?](http://www.salesforcehacker.com/2013/05/dude-wheres-my-permission.html)
   - [Metadata Coverage](https://developer.salesforce.com/docs/metadata-coverage)
 
