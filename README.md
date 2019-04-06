@@ -227,10 +227,10 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
   ```
 - Ir a C:\openssl\bin, se encuentran los archivos
   ```
-        server.crt
-        server.csr
-        server.key
-        server.pass.key
+      - server.crt
+      - server.csr
+      - server.key
+      - server.pass.key
   ```
 - Crear Aplicación Conectada
   ```
@@ -245,6 +245,66 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
       - Provide access to your data via the Web (web)
       - Perform requests on your behalf at any time (refresh_token, offline_access)
   ```
+- Use digital signatures
+  ```
+    Subir server.crt
+  ```
+-Click en Manage
+-Edit Policies
+  ```
+    Permitted Users: Admin approved user are pre-authorized
+  ```
+- Manage Profiles: System Administrator
+- Validar JWT Login Flow desde C:\openssl\bin
+  ```
+    fdx force:auth:jwt:grant --clientid {ADD_YOUR_CLIENT_ID} --jwtkeyfile server.key --username amit.salesforce21@gmail.com --instanceurl https://login.salesforce.com --setdefaultdevhubusername
+  ```
+  ```
+    - clientid  :- provide Consumer Key
+    - jwtkeyfile :- Absolute path to the location where you generated your OpenSSL server.key file
+    - instanceurl :-provide instanceurl if you are using sandbox.
+    - setdefaultdevhubusername :- Set Default dev hub User Name.
+  ```
+- Ir a Jenkins
+- Configurar Server.key en el pluggin
+  ```
+    - Jenkins
+    - Credentials
+    - System
+    - Add Credentials
+    - Kind: Secret File
+    - Seleccionar server.key
+  ```
+- Establecer las variables de Entorno de Jenkins
+  ```
+    HUB_ORG_DH: Username for the Dev Hub Org.
+    SFDC_HOST_DH: Login URL of the Salesforce instance which is hosting the Hub
+    CONNECTED_APP_CONSUMER_KEY_DH : Consumer key obtained in the connected app
+    JWT_CRED_ID_DH: The credentials ID for the private  key file (Se obtiene desde Jenkins)
+        - Login en Jenkins
+        - Ubicar las credenciales globales (Credetinals --> System --> Global Credentials --> ServerKey)
+        - Update (Extraer ID del file y utilizarlo en la variable de entorno JWT_CRED_ID_DH)
+```
+- Configurar Jenkins
+  ```
+    - Jenkins --> New Item
+    - Definir un nombre
+    - Seleccionar Categoria Multibrach PipeLine
+    - Branch sources --> Seleccionar Adicionar un item
+    - Single repository & branch --> Indicar la URL del repositorio
+    - Guardar 
+  ```  
+- Ir a la pestaña del Item creado
+- Ir al repositorio 
+- Selecionar la opcion "Build Now" 
+  ```
+    Console outPut (Se evidencia que no se puede obtener la avriable de entorno)
+  ```  
+- Reinciar el equipo
+- Retornar a Jenkins
+- Ir al repositorio 
+- Selecionar la opcion "Build Now" --> Console outPut
+
 
 
 
