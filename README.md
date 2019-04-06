@@ -68,8 +68,6 @@ Ver: [Deploying Metadata with the Force.com Migration Tool](https://www.youtube.
   ```
 - Se detecta el cambio y se lanza el build
 
-Ver: [Dude, where's my permission?](http://www.salesforcehacker.com/2013/05/dude-wheres-my-permission.html)
-
 ## Demo 6
 
 - Instalar VS Code
@@ -299,7 +297,9 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
 Ver: [Continuous Integration|Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ci.htm)
 
 
-
+- Enlaces Adicionales
+  - [Dude, where's my permission?](http://www.salesforcehacker.com/2013/05/dude-wheres-my-permission.html)
+  - [Metadata Coverage](https://developer.salesforce.com/docs/metadata-coverage)
 
 
 
