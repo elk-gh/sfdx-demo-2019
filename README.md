@@ -68,6 +68,8 @@ Ver: [Deploying Metadata with the Force.com Migration Tool](https://www.youtube.
   ```
 - Se detecta el cambio y se lanza el build
 
+Ver: [Dude, where's my permission?](http://www.salesforcehacker.com/2013/05/dude-wheres-my-permission.html)
+
 ## Demo 6
 
 - Instalar VS Code
