@@ -244,10 +244,13 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
   ```
     Permitted Users: Admin approved user are pre-authorized
   ```
-- Manage Profiles: System Administrator
+- Manage Profiles
+  ```
+  System Administrator
+  ```
 - Validar JWT Login Flow desde C:\openssl\bin
   ```
-    fdx force:auth:jwt:grant --clientid {ADD_YOUR_CLIENT_ID} --jwtkeyfile server.key --username amit.salesforce21@gmail.com --instanceurl https://login.salesforce.com --setdefaultdevhubusername
+  fdx force:auth:jwt:grant --clientid {ADD_YOUR_CLIENT_ID} --jwtkeyfile server.key --username amit.salesforce21@gmail.com --instanceurl https://login.salesforce.com --setdefaultdevhubusername
   ```
   ```
     - clientid  :- provide Consumer Key
@@ -257,14 +260,12 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
   ```
 - Ir a Jenkins
 - Configurar Server.key en el pluggin
-  ```
     - Jenkins
     - Credentials
     - System
     - Add Credentials
     - Kind: Secret File
     - Seleccionar server.key
-  ```
 - Establecer las variables de Entorno de Jenkins
   ```
     HUB_ORG_DH: Username for the Dev Hub Org.
@@ -276,14 +277,13 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
         - Update (Extraer ID del file y utilizarlo en la variable de entorno JWT_CRED_ID_DH)
    ```
 - Configurar Jenkins
-  ```
-    - Jenkins --> New Item
+    - Jenkins
+    - New Item
     - Definir un nombre
     - Seleccionar Categoria Multibrach PipeLine
     - Branch sources --> Seleccionar Adicionar un item
     - Single repository & branch --> Indicar la URL del repositorio
     - Guardar 
-  ```  
 - Ir a la pestaña del Item creado
 - Ir al repositorio 
 - Selecionar la opcion "Build Now" 
@@ -294,7 +294,7 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
 - Retornar a Jenkins
 - Ir al repositorio 
 - Selecionar la opcion "Build Now" --> Console OutPut
-Ver: [Continuous Integration|Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ci.htm)
+- Ver: [Continuous Integration|Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ci.htm)
 
 
 
