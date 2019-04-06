@@ -287,10 +287,9 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
 - Ir a la pestaña del Item creado
 - Ir al repositorio 
 - Selecionar la opcion "Build Now" 
-  ```
-    Console outPut (Se evidencia que no se puede obtener la variable de entorno)
-  ```  
-- Reinciar el equipo
+- Ir a Console Output
+- Si hay error, reinciar el equipo
+- Si hay error correr el servicio de Jenkins como el Usuario Loggeado
 - Retornar a Jenkins
 - Ir al repositorio 
 - Selecionar la opcion "Build Now" --> Console OutPut
