@@ -1,4 +1,4 @@
-### Demo CI DX - Dev Week
+### Demo CI DX - Dev Week 06 Abril 2019
 
 ## Prerequisitos
 
@@ -11,7 +11,7 @@
 - [Salesforce CLI](https://developer.salesforce.com/tools/sfdxcli)
 - [OpenSSL](https://sourceforge.net/projects/gnuwin32/files/openssl/0.9.8h-1/openssl-0.9.8h-1-bin.zip/download)
 
-## Demo 1 - Crear Objeto y Campo
+## Demo 1 - Crear Metadata
 
 - Ir a Objetos 
   - Crear Objetos
@@ -20,13 +20,13 @@
   - Crear Campos
   Nombre: Créditos
 
-## Demo 2
+## Demo 2 - Change Set Development
 
 - Conectar Sandbox A y B
 - Enviar Conjunto de cambios desde Sandbox A a B
 - Implementar Cambios en Sandbox B
 
-## Demo 3
+## Demo 3 - ANT Migration Toolkit
 
 - Instalar Migration Toolkit
 - Instalar Java y ANT
@@ -42,7 +42,7 @@
   ```
 Ver: [Deploying Metadata with the Force.com Migration Tool](https://www.youtube.com/watch?v=YW9aPrxvK3A)
 
-## Demo 4
+## Demo 4 - Integrar Control de Versiones
 
 - Crear repositorio en Github
 - Inicializar local
@@ -55,7 +55,7 @@ Ver: [Deploying Metadata with the Force.com Migration Tool](https://www.youtube.
   git push -u origin <my-branch>
   ```
   
-## Demo 5
+## Demo 5 - ANT + CVS + Jenkins
 
 - Instalar Jenkins
 - Hacer cambio en repositorio local
@@ -68,7 +68,7 @@ Ver: [Deploying Metadata with the Force.com Migration Tool](https://www.youtube.
   ```
 - Se detecta el cambio y se lanza el build
 
-## Demo 6
+## Demo 6 - SFDX + CVS sin Scratch Orgs
 
 - Instalar VS Code
 - Instalar Extension Pack
@@ -133,7 +133,7 @@ Ver: [Deploying Metadata with the Force.com Migration Tool](https://www.youtube.
   sfdx force:mdapi:deploy --zipfile tmp_convert.zip --targetusername myDevProd --testlevel RunSpecifiedTests --runtests RTest -w 1
   ```
 
-## Demo 7
+## Demo 7 - SFDX + Scratch Org
 
 - Activar DevHub en A
 - Autorizar DevHub
@@ -163,14 +163,14 @@ Ver: [Deploying Metadata with the Force.com Migration Tool](https://www.youtube.
   ```
 Ver: [Quick Start: Salesforce DX](https://trailhead.salesforce.com/content/learn/projects/quick-start-salesforce-dx?trail_id=sfdx_get_started)
 
-## Demo 8
+## Demo 8 - Paquete No Gestionado
 
 - Crear un paquete no gestionado en A
 - Agregar componentes
 - Subir el paquete
 - Compartir el link con B
 
-## Demo 9
+## Demo 9 - Paquete Desbloqueado y Versionamiento
 
 - Habilitar paquetes desbloqueados en A
 - Clonar Repositorio
@@ -202,7 +202,7 @@ Ver: [Quick Start: Salesforce DX](https://trailhead.salesforce.com/content/learn
   ```
 Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/learn/modules/unlocked-packages-for-customers/build-your-first-unlocked-package)
 
-## Demo 10
+## Demo 10 - Jenkins + SFDX
 - Instalar openSSL en C:\openssl
 - Setear variable de entorno
   ```
@@ -296,7 +296,9 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
 
 Ver: [Continuous Integration|Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ci.htm)
 
-
+## Slides
+ - [Salesforce DX - CI Workshop DeWeek 2019] (https://slidr.io/elk-gh/salesforce-dx-ci-workshop-deweek-2019#1)
+ 
 ## Enlaces Adicionales
   - [Dude, where's my permission?](http://www.salesforcehacker.com/2013/05/dude-wheres-my-permission.html)
   - [Metadata Coverage](https://developer.salesforce.com/docs/metadata-coverage)
