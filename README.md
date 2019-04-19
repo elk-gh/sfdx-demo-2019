@@ -11,6 +11,9 @@
 - [Salesforce CLI](https://developer.salesforce.com/tools/sfdxcli)
 - [OpenSSL](https://sourceforge.net/projects/gnuwin32/files/openssl/0.9.8h-1/openssl-0.9.8h-1-bin.zip/download)
 
+## Slides
+ - [Salesforce DX - CI Workshop DeWeek 2019](https://slidr.io/elk-gh/salesforce-dx-ci-workshop-deweek-2019#1)
+ 
 ## Demo 1 - Crear Metadata
 
 - Ir a Objetos 
@@ -295,9 +298,6 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
 - Selecionar la opcion "Build Now" --> Console OutPut
 
 Ver: [Continuous Integration|Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ci.htm)
-
-## Slides
- - [Salesforce DX - CI Workshop DeWeek 2019] (https://slidr.io/elk-gh/salesforce-dx-ci-workshop-deweek-2019#1)
  
 ## Enlaces Adicionales
   - [Dude, where's my permission?](http://www.salesforcehacker.com/2013/05/dude-wheres-my-permission.html)
