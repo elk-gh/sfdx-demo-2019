@@ -8,8 +8,23 @@
 - [Jenkins](https://jenkins.io/download/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Salesforce Extension Pack](https://marketplace.visualstudio.com/items?itemName=salesforce.salesforcedx-vscode)
+- [GIT](https://git-scm.com/downloads)
 - [Salesforce CLI](https://developer.salesforce.com/tools/sfdxcli)
 - [OpenSSL](https://sourceforge.net/projects/gnuwin32/files/openssl/0.9.8h-1/openssl-0.9.8h-1-bin.zip/download)
+
+# Comandos para verificar instalación
+
+- Git              
+  ```git --version```
+- Java             
+  ```java -version```
+- Ant              
+  ```ant -version```
+- SFDX CLI 
+  - Version ```sfdx --version```
+  - Update ```sfdx update```
+- OpenSSL          
+  ```openssl version```
 
 ## Slides
  - [Salesforce DX - CI Workshop DeWeek 2019](https://slidr.io/elk-gh/salesforce-dx-ci-workshop-deweek-2019#1)
