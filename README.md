@@ -12,7 +12,7 @@
 - [Salesforce CLI](https://developer.salesforce.com/tools/sfdxcli)
 - [OpenSSL](https://sourceforge.net/projects/gnuwin32/files/openssl/0.9.8h-1/openssl-0.9.8h-1-bin.zip/download)
 
-# Comandos para verificar instalación
+### Comandos para verificar instalación
 
 - Git              
   ```git --version```
