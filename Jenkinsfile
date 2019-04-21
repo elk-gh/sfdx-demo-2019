@@ -37,7 +37,7 @@ node {
 			//Convert to mdapi
 			rc = sh returnStatus: true, script: "${toolbelt}/sfdx force:source:convert --rootdir force-app --outputdir mdapioutput"
 			if (rc != 0) {
-			error 'push all failed'
+			error 'convert failed'
 			}
  
 			// need to pull out assigned username
