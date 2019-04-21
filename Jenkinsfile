@@ -34,11 +34,16 @@ node {
 
 			println rc
 			
-			//Convert to mdapi
-			rc = sh returnStatus: true, script: "${toolbelt}/sfdx force:source:convert --rootdir force-app --outputdir mdapioutput"
-			if (rc != 0) {
-			error 'convert failed'
+			//Convert to mdapi			
+			if (isUnix()) {
+				rcm = sh returnStdout: true, script: "${toolbelt} force:source:convert --rootdir force-app --outputdir mdapioutput"
+			}else{
+			   rcm = bat returnStdout: true, script: "\"${toolbelt}\" force:source:convert --rootdir force-app --outputdir mdapioutput"
 			}
+			
+			if (rcm != 0) { error 'convert failed' }
+
+			println rcm
  
 			// need to pull out assigned username
 			if (isUnix()) {
