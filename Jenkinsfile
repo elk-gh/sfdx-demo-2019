@@ -22,6 +22,11 @@ node {
         // when running in multi-branch job, one must issue this command
         checkout scm
     }
+	
+    stage('checkout source') {
+        //Create Directory
+        sh "mkdir mdapioutputdirectory"
+    }
 
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
         stage('Deploye Code') {
