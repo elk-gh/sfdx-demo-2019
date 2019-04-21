@@ -41,8 +41,6 @@ node {
 			   rcm = bat returnStdout: true, script: "\"${toolbelt}\" force:source:convert --rootdir force-app --outputdir mdapioutput"
 			}
 			
-			if (rcm != 0) { error 'convert failed' }
-
 			println rcm
  
 			// need to pull out assigned username
