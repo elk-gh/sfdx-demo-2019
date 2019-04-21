@@ -22,11 +22,6 @@ node {
         // when running in multi-branch job, one must issue this command
         checkout scm
     }
-	
-    stage('create directory') {
-        //Create Directory
-        sh "mkdir mdapioutputdirectory"
-    }
 
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
         stage('Deploye Code') {
@@ -41,9 +36,9 @@ node {
 			
 			// need to pull out assigned username
 			if (isUnix()) {
-				rmsg = sh returnStdout: true, script: "${toolbelt} force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
+				rmsg = sh returnStdout: true, script: "${toolbelt} force:mdapi:deploy -d mdapioutput/ -u ${HUB_ORG} -w 100"
 			}else{
-			   rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:mdapi:deploy -d manifest/. -u ${HUB_ORG}"
+			   rmsg = bat returnStdout: true, script: "\"${toolbelt}\" force:mdapi:deploy -d mdapioutput/ -u ${HUB_ORG} -w 100"
 			}
 			  
             printf rmsg
