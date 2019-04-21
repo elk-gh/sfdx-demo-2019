@@ -176,7 +176,7 @@ Ver: [Convert and Deploy an Existing App](https://trailhead.salesforce.com/en/co
   ```
 - Crear una Scratch Org
   ```
-  sfdx force:org:create -s -f config/project-scratch-def.json -a sfdx-demo-2019
+  sfdx force:org:create -s -f config/project-scratch-def.json -a sfdx-demo-2019 -v TARGETDEVHUBUSERNAME
   ```
 - Hacer push a Scratch Org
   ```
