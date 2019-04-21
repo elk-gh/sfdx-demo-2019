@@ -24,7 +24,7 @@ node {
     }
 
     withCredentials([file(credentialsId: JWT_KEY_CRED_ID, variable: 'jwt_key_file')]) {
-        stage('Deploye Code') {
+        stage('Deploy Code') {
             if (isUnix()) {
                 rc = sh returnStatus: true, script: "${toolbelt} force:auth:jwt:grant --clientid ${CONNECTED_APP_CONSUMER_KEY} --username ${HUB_ORG} --jwtkeyfile ${jwt_key_file} --setdefaultdevhubusername --instanceurl ${SFDC_HOST}"
             }else{
@@ -34,6 +34,12 @@ node {
 
 			println rc
 			
+			//Convert to mdapi
+			rc = sh returnStatus: true, script: "${toolbelt}/sfdx force:source:convert --rootdir force-app --outputdir mdapioutput"
+			if (rc != 0) {
+			error 'push all failed'
+			}
+ 
 			// need to pull out assigned username
 			if (isUnix()) {
 				rmsg = sh returnStdout: true, script: "${toolbelt} force:mdapi:deploy -d mdapioutput/ -u ${HUB_ORG} -w 100"
