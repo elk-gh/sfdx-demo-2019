@@ -171,7 +171,7 @@ Ver: [Convert and Deploy an Existing App](https://trailhead.salesforce.com/en/co
   ```
 - Clonar Repositorio
   ```
-  git clone git@github.com:elk-gh/sfdx-demo-2019.git
+  git clone git@github.com:elk-gh/sfdx-demo-2019.git folder-name
   git checkout demo-7
   ```
 - Crear una Scratch Org
@@ -200,7 +200,7 @@ Ver: [Quick Start: Salesforce DX](https://trailhead.salesforce.com/content/learn
 - Habilitar paquetes desbloqueados en A
 - Clonar Repositorio
   ```
-  git clone git@github.com:elk-gh/sfdx-demo-2019.git
+  git clone git@github.com:elk-gh/sfdx-demo-2019.git folder-name
   git checkout demo-9
   ```
 - Crear paquete desbloqueado
