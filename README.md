@@ -180,7 +180,7 @@ Ver: [Convert and Deploy an Existing App](https://trailhead.salesforce.com/en/co
   ```
 - Hacer push a Scratch Org
   ```
-  sfdx force:source:push
+  sfdx force:source:push -u TARGETUSERNAME
   ```
 - Abrir Scratch Org
   ```
