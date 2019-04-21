@@ -118,7 +118,7 @@ Ver: [Deploying Metadata with the Force.com Migration Tool](https://www.youtube.
   ```
 - Convertir source a mdapi
   ```
-  sfdx force:source:convert --rootdir force-app --outputdir tmp_convert
+  sfdx force:source:convert --rootdir force-app --outputdir tmp_convert -w 100
   ```
 - Zippear
 - Autorizar Org B
@@ -135,6 +135,7 @@ Ver: [Deploying Metadata with the Force.com Migration Tool](https://www.youtube.
   ```
   sfdx force:mdapi:deploy --zipfile tmp_convert.zip --targetusername myDevProd --testlevel RunSpecifiedTests --runtests RTest -w 1
   ```
+Ver: [Convert and Deploy an Existing App](https://trailhead.salesforce.com/en/content/learn/modules/sfdx_app_dev/sfdx_app_dev_deploy)
 
 ## Demo 7 - SFDX + Scratch Org
 
