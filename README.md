@@ -63,6 +63,11 @@ Ver: [Deploying Metadata with the Force.com Migration Tool](https://www.youtube.
 ## Demo 4 - Integrar Control de Versiones
 
 - Crear repositorio en Github
+- Configurar Usuario 
+  ```
+  git config --global user.name "YOUR_NAME"
+  git config --global user.email "YOUR_EMAIL"
+  ```
 - Inicializar local
   ```
   git init
@@ -100,6 +105,7 @@ Ver: [Deploying Metadata with the Force.com Migration Tool](https://www.youtube.
   ```
   .sfdx
   .vscode
+  .DS_Store
   ```
 - Inicializar repositorio
   ```
