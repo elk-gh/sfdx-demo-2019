@@ -23,7 +23,7 @@ node {
         checkout scm
     }
 	
-    stage('checkout source') {
+    stage('create directory') {
         //Create Directory
         sh "mkdir mdapioutputdirectory"
     }
