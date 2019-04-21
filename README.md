@@ -298,7 +298,9 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
 - Ir al repositorio 
 - Selecionar la opcion "Build Now" --> Console OutPut
 
-Ver: [Continuous Integration|Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ci.htm)
+Ver: 
+- [Develop an App with Salesforce CLI and Source Control](https://trailhead.salesforce.com/en/content/learn/projects/develop-app-with-salesforce-cli-and-source-control)
+- [Continuous Integration|Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ci.htm)
  
 ## Enlaces Adicionales
   - [Dude, where's my permission?](http://www.salesforcehacker.com/2013/05/dude-wheres-my-permission.html)
