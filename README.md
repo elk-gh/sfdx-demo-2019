@@ -118,7 +118,7 @@ Ver: [Deploying Metadata with the Force.com Migration Tool](https://www.youtube.
   ```
 - Convertir source a mdapi
   ```
-  sfdx force:source:convert --rootdir force-app --outputdir tmp_convert -w 100
+  sfdx force:source:convert --rootdir force-app --outputdir tmp_convert
   ```
 - Zippear
 - Autorizar Org B
