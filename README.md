@@ -101,7 +101,7 @@ Ver: [Deploying Metadata with the Force.com Migration Tool](https://www.youtube.
   ```
   sfdx force:config:set defaultusername=<username>
   ```
-- Retrieve metadata (beta) (tra metadata en "source" format)
+- Retrieve metadata (beta) (trae metadata en "source" format)
   - Por componentes
   ```
   sfdx force:source:retrieve --metadata CustomObject:Curso__c,CustomField:Curso__c.Creditos__c,ApexClass
@@ -116,7 +116,7 @@ Ver: [Deploying Metadata with the Force.com Migration Tool](https://www.youtube.
   git commit -m "commit message"
   git push -u origin <my-branch>
   ```
-- Convertir source a mdapi (Conviere del formato "source" al típico "metadata")
+- Convertir source a mdapi (Convierte del formato "source" al típico "metadata")
   ```
   sfdx force:source:convert --rootdir force-app --outputdir tmp_convert
   ```
@@ -126,7 +126,7 @@ Ver: [Deploying Metadata with the Force.com Migration Tool](https://www.youtube.
   ```
   sfdx force:auth:web:login --setalias myDevProd --instanceurl https://login.salesforce.com
   ```
-- Deploy metadata (Se necesita el formato "metadata" para usar comandos de mdapi)
+- Deploy metadata (Se necesita el formato "metadata" para usar comandos de mdapi. Es el recomendado para producción hasta el momento)
   - Sin Pruebas
   ```
   sfdx force:mdapi:deploy --zipfile tmp_convert.zip --targetusername myDevProd --testlevel NoTestRun -w 1
