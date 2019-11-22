@@ -68,6 +68,13 @@ Ver: [Deploying Metadata with the Force.com Migration Tool](https://www.youtube.
   git config --global user.name "YOUR_NAME"
   git config --global user.email "YOUR_EMAIL"
   ```
+- Crear Certificado SSL
+  ```
+  ssh-keygen -t rsa -b 4096 -C "YOUR_NAME"
+  ssh -T git@github.com
+  ```
+- Cargar llave pública en Github
+
 - Inicializar local
   ```
   git init
