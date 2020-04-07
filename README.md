@@ -237,7 +237,7 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
       - Provide access to your data via the Web (web)
       - Perform requests on your behalf at any time (refresh_token, offline_access)
       Check Use digital signatures
-      Choose File: server.crt
+      Choose File: server.crt en C:\openssl\bin
       Click en Manage
       Click en Edit Policies
       Permitted Users: Admin approved user are pre-authorized
@@ -248,7 +248,7 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
   ```
 - Validar JWT Login Flow desde C:\openssl\bin
   ```
-    fdx force:auth:jwt:grant --clientid {ADD_YOUR_CLIENT_ID} --jwtkeyfile server.key --username amit.salesforce21@gmail.com --instanceurl https://login.salesforce.com --setdefaultdevhubusername
+    sfdx force:auth:jwt:grant --clientid {ADD_YOUR_CLIENT_ID} --jwtkeyfile server.key --username {ADD_YOUR_USERNAME} --instanceurl https://login.salesforce.com --setdefaultdevhubusername
   ```
   ```
     - clientid  :- provide Consumer Key
@@ -262,14 +262,15 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
     - Jenkins
     - Credentials
     - System
+    - Global credentials (unrestricted) 
     - Add Credentials
     - Kind: Secret File
-    - Seleccionar server.key
+    - Seleccionar server.key en C:\openssl\bin
   ```
-- Establecer las variables de Entorno de Jenkins
+- Establecer las variables de Entorno del Sistema para Jenkins en el PC 
   ```
     HUB_ORG_DH: Username for the Dev Hub Org.
-    SFDC_HOST_DH: Login URL of the Salesforce instance which is hosting the Hub
+    SFDC_HOST_DH: Login URL of the Salesforce instance which is hosting the Hub. Example: https://login.salesforce.com
     CONNECTED_APP_CONSUMER_KEY_DH : Consumer key obtained in the connected app
     JWT_CRED_ID_DH: The credentials ID for the private  key file (Se obtiene desde Jenkins)
         - Login en Jenkins
