@@ -284,11 +284,12 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
     - Seleccionar Categoria Multibrach PipeLine
     - Branch sources --> Seleccionar Adicionar un item
     - Single repository & branch --> Indicar la URL del repositorio
+    - Especificar la rama si es requerido
     - Guardar 
   ```  
 - Ir a la pestaña del Item creado
-- Ir al repositorio 
-- Selecionar la opcion "Build Now" 
+- En la lista que aparece dar click en el nombre del ultimo build
+- Selecionar la opcion "Build Now" en la iquierda
   ```
     Console outPut (Se evidencia que no se puede obtener la variable de entorno)
   ```  
@@ -296,6 +297,8 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
 - Retornar a Jenkins
 - Ir al repositorio 
 - Selecionar la opcion "Build Now" --> Console OutPut
+
+http://amitsalesforce.blogspot.com/2019/01/continuous-integration-using-jenkins-with-salesforceDx.html
 
 
 
