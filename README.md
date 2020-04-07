@@ -203,12 +203,14 @@ Ver: [Quick Start: Salesforce DX](https://trailhead.salesforce.com/content/learn
 Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/learn/modules/unlocked-packages-for-customers/build-your-first-unlocked-package)
 
 ## Demo 10
-- Instalar openSSL en C:\openssl
-- Setear variable de entorno
+- Descargar openSSL en C:\openssl de https://sourceforge.net/projects/gnuwin32/files/openssl/
+- Descomprimir y cambiar el nombre de la carpeta a openssl
+- Copiar y pegar la carpeta openssl a C:\
+- Setear variable de entorno (System Variable)
   ```
   OPENSSL_CONF=C:\openssl\share\openssl.cnf
   ```
-- Ir a C:\openssl\bin
+- Ir a C:\openssl\bin y ejecutar CMD desde ahí
 - Generar llave privada RSA
   ```
   openssl genrsa -des3 -passout pass:x -out server.pass.key 2048
@@ -226,10 +228,10 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
       openssl x509 -req -sha256 -days 365 -in server.csr -signkey server.key -out server.crt
   ```
 - Crear Aplicación Conectada
-  ```- Callback URL: http://localhost:1717/OauthRedirect
-  ```
-- Enable OAuth Settings
-  ```
+  ``` 
+      Name: Jenkins
+      Callback URL: http://localhost:1717/OauthRedirect
+      Selected OAuth Scopes:
       - Access your basic information (id, profile, email, address, phone)
       - Access and manage your data (api)
       - Provide access to your data via the Web (web)
