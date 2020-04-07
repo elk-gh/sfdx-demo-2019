@@ -236,17 +236,16 @@ Ver: [Unlocked Packages for Customers](https://trailhead.salesforce.com/content/
       - Access and manage your data (api)
       - Provide access to your data via the Web (web)
       - Perform requests on your behalf at any time (refresh_token, offline_access)
+      Check Use digital signatures
+      Choose File: server.crt
+      Click en Manage
+      Click en Edit Policies
+      Permitted Users: Admin approved user are pre-authorized
+      Click Save
+      Click Manage Profiles
+      Select System Administrator
+      Click Save
   ```
-- Use digital signatures
-  ```
-    server.crt
-  ```
--Click en Manage
--Edit Policies
-  ```
-    Permitted Users: Admin approved user are pre-authorized
-  ```
-- Manage Profiles: System Administrator
 - Validar JWT Login Flow desde C:\openssl\bin
   ```
     fdx force:auth:jwt:grant --clientid {ADD_YOUR_CLIENT_ID} --jwtkeyfile server.key --username amit.salesforce21@gmail.com --instanceurl https://login.salesforce.com --setdefaultdevhubusername
